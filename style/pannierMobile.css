@@ -3,6 +3,20 @@
     .pannierMobile{
         display: none;
     }
+    .pannier2{
+        display:none;
+    }
+    .pannier3
+    {
+        background-color: ;
+        width: 200px;
+        border: 1px solid rgb(188, 77, 77);
+        box-shadow: 1px 1px 10px rgb(255, 155, 155);
+        border-radius: 5px;
+        font-family: 'Allan';
+        text-align: center;
+        
+    }
 }
 @media screen and (max-width: 800px){
     .pannierMobile{
