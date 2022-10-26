@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/head.css">
+    <link rel="stylesheet" href="style/head-mobile.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/menu-scroll.css">
+    <link rel="stylesheet" href="style/pannierMobile.css">
+    <link rel="stylesheet" href="style/pannier2.css">
+</head>
+<body>
+    <div class="pannierMobile" id="pannierMobile" style="display: none;">
+        <div class="pannier2">
+            <br> Pannier <br> <br> <br> <br>
+            Salade : 15$ <br> <br> <br>
+            Plat : 30$ <br> <br> <br>
+            Obento : 22 $ <br> <br> <br>
+            <div class="total-btn">
+                <div class="total1">Total =</div>
+                <div class="total2">30$</div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-scroll" id="menu-scroll">
+        <div class="lien-head"><a href="index.html" class="">Acceuil</a></div> <br>
+        <div class="lien-head"><a href="apropos.html" class=""> A propos</a></div> <br>
+        <div class="lien-head"><a href="carte.html" class="">Carte</a></div> <br>
+        <div class="lien-head active"><a href="contact.html" class="">Contact</a></div>  
+    </div>
+    <div class="container">
+        <!--START HEAD-->
+        <div class="index indexMobile head">
+            <div class="menu-red-icon"><img src="img/icons/menu-red.png" onclick="myFunction()" style="width: 20px; height:20px;" alt=""></div>
+            <div class="logo"> <a href=""><img src="img/logo.png" alt="" class="logo-img"></a>  </div>
+            <div class="panier-icon-icon"><img src="img/icons/panier-icon.png" onclick="showPanier()" style="width: 20px; height:20px;" alt=""></div> 
+            <div class="menu">
+                <div class="lien-head "><a href="index.html" class="">Acceuil</a></div>
+                <div class="lien-head "><a href="apropos.html" class=""> A propos</a></div>
+                <div class="lien-head "><a href="carte.html" class="">Carte</a></div>
+                <div class="lien-head active"><a href="contact.html" class="">Contact</a></div>  
+            </div>
+        </div>
+        <!--END HEAD-->
+        <div class="contact">
+            <br> <span class="contact-text1">CONTACTER-NOUS</span> <br> <br>
+            <span class="contact-text2">VOUS AVEZ UNE QUESTION ? Pour toute question, merci de nous faire part à l'aide de ce formulaire</span> <br> <br>
+            <input type="text" class="contact-input" placeholder="Nom Complet ..."> <br><br>
+            <input type="text" class="contact-input" placeholder="Email ..."> <br><br>
+            <input type="text" class="contact-input" placeholder="Numéro de téléphone ..."> <br><br>
+            <textarea placeholder="Message ..." name="" id="" cols="30" rows="10" class="contact-textarea"></textarea> <br><br>
+            <input type="submit" value="Envoyer" class="contact-btn-envoyer">
+        </div>
+        <!-- FOOTER -->
+        <div class="index footer">
+            <a href="">Privacy Policy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="">Terms and Conditions</a>
+        </div>
+        <!-- FIN FOOTER -->
+    </div>
+    <script>
+        function showPanier() {
+          var x = document.getElementById("pannierMobile");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        function myFunction() {
+          var x = document.getElementById("menu-scroll");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>

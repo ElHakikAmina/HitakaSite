@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 800px){
+    .pannierMobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .pannierMobile{
+        position: absolute;
+        top:50px ;
+        right: 10px;
+        background-color: #fff;
+    }   
+}

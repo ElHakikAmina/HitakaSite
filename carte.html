@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/head-Carte.css">
+    <link rel="stylesheet" href="style/head-mobile-carte.css">
+    <link rel="stylesheet" href="style/carte.css">
+    <link rel="stylesheet" href="style/carteMobile.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/menu-scroll.css">
+    <link rel="stylesheet" href="style/pannierMobile.css">
+</head>
+<body>
+    <script>
+            
+    </script>
+    <div class="menu-scroll" id="menu-scroll">
+        <div class="lien-head "><a href="index.html" class="">Acceuil</a></div> <br>
+        <div class="lien-head"><a href="apropos.html" class=""> A propos</a></div> <br>
+        <div class="lien-head active"><a href="carte.html" class="">Carte</a></div> <br>
+        <div class="lien-head"><a href="contact.html" class="">Contact</a></div>  
+    </div>
+
+
+
+
+
+
+
+
+    <div class="pannierMobile" id="pannierMobile" style="display: none;">
+        <div class="pannier2">
+            <br> Pannier <br> <br> <br> <br>
+            Salade : 15$ <br> <br> <br>
+            Plat : 30$ <br> <br> <br>
+            Obento : 22 $ <br> <br> <br>
+            <div class="total-btn">
+                <div class="total1">Total =</div>
+                <div class="total2">30$</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <!--START HEAD-->
+        <div class="index indexMobile head">
+            <div class="menu-red-icon"><img src="img/icons/menu-red.png" onclick="myFunction()" style="width: 20px; height:20px;" alt=""></div>
+            <div class="logo"> <a href=""><img src="img/logo.png" alt="" class="logo-img"></a>  </div>
+            <div class="panier-icon-icon"><img src="img/icons/panier-icon.png" onclick="showPanier()"  style="width: 20px; height:20px;" alt=""></div> 
+            <div class="menu">
+                <div class="lien-head "><a href="index.html" class="">Acceuil</a></div>
+                <div class="lien-head "><a href="apropos.html" class=""> A propos</a></div>
+                <div class="lien-head active"><a href="carte.html" class="">Carte</a></div>
+                <div class="lien-head"><a href="contact.html" class="">Contact</a></div>  
+            </div>
+        </div>
+        <!--END HEAD-->
+        <div class="selecteur">
+            <select name="" id="categorie" class="categorie" onchange="PlatSelectioner();">
+                <option value="0">Categorie</option>
+                <option value="1">Salade</option>
+                <option value="2" onclick="alert('fff');">Obento</option>
+                <option value="3">Plat</option>
+            </select>
+            vous avez choisi : <div id="categorie-choisi"></div>
+        </div>
+        <div class="pannier">
+            <div class="pannier2">
+                <br> Pannier <br> <br> <br> <br>
+                Salade : 15$ <br> <br> <br>
+                Plat : 30$ <br> <br> <br>
+                Obento : 22 $ <br> <br> <br>
+                <div class="total-btn">
+                    <div class="total1">Total =</div>
+                    <div class="total2">30$</div>
+                </div>
+            </div>
+        </div>
+        <div class="repas" id="repas">
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            <div class="repas-plat" id="repas-plat">
+                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                Plat 1 <br>
+                ingredient 1, ingredient 2 ,ingredient 3 <br>
+                <span class="price-plat" >25£</span> <br>
+                <span id="ajouter"><a href="">Ajouter</a></span>
+            </div>
+            
+        </div>
+        <!-- FOOTER -->
+        <div class="index footer">
+            <a href="">Privacy Policy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="">Terms and Conditions</a>
+        </div>
+        <!-- FIN FOOTER -->
+    </div>
+    <script>
+    function PlatSelectioner() {
+    var picture_type = document.getElementById('categorie').value;
+    if (picture_type == 1) {
+        document.getElementById('Plat').style.visibility = "none";
+        document.getElementById('Obento').style.visibility = "none";
+        document.getElementById('lesSalades').style.visibility = "visible";
+    }  
+    if (picture_type == 2) {
+        document.getElementById('Plat').style.visibility = "none";
+        document.getElementById('lesSalades').style.visibility = "none";
+        document.getElementById('Obento').style.visibility = "visible";
+    } 
+    if (picture_type == 3) {
+        document.getElementById('lesSalades').style.visibility = "none";
+        document.getElementById('Obento').style.visibility = "none";
+        document.getElementById('Plat').style.visibility = "visible";
+    }
+}
+
+
+        function showPanier() {
+          var x = document.getElementById("pannierMobile");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        function myFunction() {
+          var x = document.getElementById("menu-scroll");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>
+<script>
+    const selects = document.querySelectorAll('.categorie');
+    selects.forEach((elem) => {
+    elem.addEventListener('change', (event) => {
+    document.getElementById("categorie-choisi").innerHTML="Les "+elem.value+"s ";
+   // alert(elem.value);  //to display the selected value
+    });
+    });
+    if(elem.value!="Salade")
+        {
+            alert("ggggg");
+        }
+</script>

@@ -1,0 +1,117 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+@media screen and (min-width: 600px){
+.container
+{
+    display: flex;
+    flex-direction: column;
+}
+.index{
+    
+    width: 100%;
+}
+.indexMargin{
+    width: 80%;
+    margin: auto auto;
+}
+.image-resto1{
+    
+    height: 50vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    background-image: url("../img/japanese-restaurant.jpg");
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0px 0px;
+    justify-content: left;
+}
+.black-hover{
+    position: relative;
+    top: 0px;
+    left: 0px;
+   background-color: rgba(0, 0, 0, 0.463);
+    width: 30%;
+    height: 100%;
+    z-index: 2;
+    color:blue;  
+}
+.img-resto
+{
+  width: 80%;
+  height:400px;
+}
+.image-resto1-text{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    color: #fff;
+    font-family: 'Allan', sans-serif;
+    font-size: 25px;
+}
+.image-resto1-text2
+{
+    position: absolute;
+    top: 100px;
+    right: -50px;
+    color: #fff;
+    font-family: 'Allison', cursive;
+    font-size: 50px;
+}
+.sushi3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sushi3img
+{
+    width: 200px;
+    height: 200px;
+}
+.name3sushi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: 'Allan', cursive;
+}
+.text{
+    margin-top:30px ;
+    text-align: center;
+    font-family: 'Allison', cursive;
+    font-size: 40px;
+    color: #C32630;
+}
+.text2{
+    margin-top:30px ;
+    text-align: center;
+    font-family: 'Allan', cursive;
+    
+}
+.text2 a{
+    font-size: 35px;
+    color: #585858;
+    text-decoration: none;
+}
+.footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: #C32630;
+}
+.footer a
+{
+    text-decoration: none;
+    color:#F3E9E9 ;
+    font-family: 'Allan', cursive;
+}
+.Maki-sushi{
+    display: none;
+}
+}

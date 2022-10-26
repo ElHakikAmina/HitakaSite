@@ -1,0 +1,48 @@
+
+@media screen and (max-width: 935px){
+    .content-text1
+    {
+        position: absolute;
+        top: 96px;
+        left:100px;
+        color: ;
+        font-family: 'Allan', sans-serif;
+        font-size: 20px;
+        
+    }
+    .content-text2{
+        position: absolute;
+        top: 180px;
+        left: 252px;
+        color: ;
+        font-family: 'Allan', sans-serif;
+        font-size: 20px;
+    }
+    .content-text3{
+        position: absolute;
+    top: 403px;
+    left: 151px;
+    color: ;
+    font-family: 'Allison', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    .img2{
+        position: absolute;
+        top: 141px;
+        left: 59px;
+        width: 139px;
+        height: 220px;
+        z-index: 1;
+    }
+    .img1{
+        position: absolute;
+    top: 306px;
+    left: 119px;
+    width: 309PX;
+    height: 90px;
+    z-index: 2;
+    
+    }
+    
+}

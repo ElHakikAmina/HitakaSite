@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/head.css">
+    <link rel="stylesheet" href="style/head-mobile.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/indexMobile.css">
+    <link rel="stylesheet" href="style/menu-scroll.css">
+    <link rel="stylesheet" href="style/pannierMobile.css">
+    <link rel="stylesheet" href="style/pannier2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pannierMobile" id="pannierMobile" style="z-index:2 ; display: none;">
+        <div class="pannier2">
+            <br> Pannier <br> <br> <br> <br>
+            Salade : 15$ <br> <br> <br>
+            Plat : 30$ <br> <br> <br>
+            Obento : 22 $ <br> <br> <br>
+            <div class="total-btn">
+                <div class="total1">Total =</div>
+                <div class="total2">30$</div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-scroll" id="menu-scroll" >
+        <div class="lien-head active"><a href="index.html" class="">Acceuil</a></div> <br>
+        <div class="lien-head"><a href="apropos.html" class=""> A propos</a></div> <br>
+        <div class="lien-head"><a href="carte.html" class="">Carte</a></div> <br>
+        <div class="lien-head"><a href="contact.html" class="">Contact</a></div>  
+    </div>
+    <div class="container" style="z-index:1 ;">
+        <!--START HEAD-->
+        <div class="indexMobile head">
+            <div class="menu-red-icon"><img src="img/icons/menu-red.png" onclick="myFunction()"  style="width: 20px; height:20px;" alt=""></div>
+            <div class="logo"> <a href=""><img src="img/logo.png" alt="" class="logo-img"></a>  </div>
+            <div class="panier-icon-icon"><img src="img/icons/panier-icon.png" onclick="showPanier()" style="width: 20px; height:20px;" alt=""></div>   
+            <div class="menu">
+                <div class="lien-head active"><a href="index.html" class="">Acceuil</a></div>
+                <div class="lien-head"><a href="apropos.html" class=""> A propos</a></div>
+                <div class="lien-head"><a href="carte.html" class="">Carte</a></div>
+                <div class="lien-head"><a href="contact.html" class="">Contact</a></div>  
+            </div>
+        </div>
+        <!--END HEAD-->
+        <!--START IMAGE-->
+        <div class="indexMargin image-resto1">
+            <!-- <img class="img-resto" src="img/japanese-restaurant.jpg" alt=""> -->
+            <div class="black-hover">
+                <div class="image-resto1-text"> HITAKA Restaurant Japonais</div>
+                <div class="image-resto1-text2">  Livraison ou vous  <br>
+                    quand vous voulez <br>
+                    comme vous voulez! </div>
+
+            </div>
+          
+        </div>
+        <!--END IMAGE-->
+        <!-- START SUCHIS 3-->
+        <div class="indexMargin sushi3">
+            <div class="sushi3img"> <img src="img/sushi3/sushi1.jfif" alt="" style="width: 100%; height:100%;"> <br> <br> <span class="Maki-sushi">Maki-sushi</span> </div>
+            <div class="sushi3img"> <img src="img/sushi3/sushi2.jpg" alt="" style="width: 100%; height:100%;"> <br> <br> <span class="Maki-sushi">Maki-sushi</span> </div>
+            <div class="sushi3img"> <img src="img/sushi3/sushi3.jpg" alt="" style="width: 100%; height:100%;"> <br> <br> <span class="Maki-sushi">Maki-sushi</span> </div>
+        </div>
+        <!-- END SUCHIS 3-->
+        <!--Name 3 sushi-->
+        <div class="indexMargin name3sushi">
+            <div class="name">Maki-sushi</div>
+            <div class="name">Maki-sushi</div>
+            <div class="name">Maki-sushi</div>
+        </div>
+        <!--EndName 3 sushi-->
+        <div class="indexMarginx text">
+            Etes vous prêts pour tester les meilleurs sushi du monde?
+        </div>
+        <div class="indexMarginx text2">
+            <a href="">Voir nos menus</a>
+            
+        </div>
+        <!-- FOOTER -->
+        <div class="index footer">
+            <a href="">Privacy Policy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="">Terms and Conditions</a>
+        </div>
+        <!-- FIN FOOTER -->
+    </div>
+    <script>
+        
+        function showPanier(){
+            var x= document.getElementById("pannierMobile");
+            if(x.style.display === "block")
+            {
+                x.style.display = "none";
+            }else{
+                x.style.display = "block";
+            }
+        }
+        function myFunction() {
+          var x = document.getElementById("menu-scroll");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>

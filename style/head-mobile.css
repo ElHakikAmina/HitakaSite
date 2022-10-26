@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px){
+    .container
+    {
+        width: 100%;
+        margin: auto auto;
+        margin-top:5px ;
+    }
+    .head{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      padding-top: 10px;
+      justify-content: center;
+      margin: 0;
+     
+  }
+  .indexMobile{width: 90%; margin: auto;}
+  .logo{
+      width:150px ;
+      height: 30px;
+      margin-top: 10px;
+      margin-left: 10px;
+      grid-column-start:2;
+    grid-column-end: 5;
+    text-align: center;
+    margin-top: 0;
+  }
+  .logo-img{
+      width: 100%;
+      height: 100%;
+  }
+  .menu{display: none;}
+  .menu-red-icon{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .panier-icon-icon{
+    grid-column-start: 5;
+    grid-column-end: 6; 
+  }
+  }
