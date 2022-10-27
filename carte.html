@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="style/menu-scroll.css">
     <link rel="stylesheet" href="style/pannierMobile.css">
     <link rel="stylesheet" href="style/head-mobile-carte.css">
+    <link rel="stylesheet" href="style/platJs.css">
 </head>
 <body>
     <script>
-            
+       
     </script>
     <div class="menu-scroll" id="menu-scroll" style="display: none;">
         <div class="lien-head "><a href="index.html" class="">Acceuil</a></div> <br>
@@ -34,14 +35,16 @@
 
 
     <div class="pannierMobile" id="pannierMobile" style="display: none;">
-        <div class="pannier2">
-            <br> Pannier <br> <br> <br> <br>
+        <div class="pannier2" id="pannier2">
+            Panier <br>
+            <div id="vosChoix"></div>
+            <!-- <br> Pannier <br> <br> <br> <br>
             Salade : 15$ <br> <br> <br>
             Plat : 30$ <br> <br> <br>
-            Obento : 22 $ <br> <br> <br>
+            Obento : 22 $ <br> <br> <br> -->
             <div class="total-btn">
                 <div class="total1">Total =</div>
-                <div class="total2">30$</div>
+                <div class="total2 " id="total2">0</div>
             </div>
         </div>
     </div>
@@ -78,100 +81,202 @@
                 <option value="2" onclick="alert('fff');">Obento</option>
                 <option value="3">Plat</option>
             </select>
-            vous avez choisi : <div id="categorie-choisi"></div>
+            <!-- vous avez choisi : <div id="categorie-choisi"></div> -->
         </div>
+        <!-- PANIER -->
         <div class="pannier">
             <div class="pannier3">
-                <br> Pannier <br> <br> <br> <br>
-                Salade : 15$ <br> <br> <br>
-                Plat : 30$ <br> <br> <br>
-                Obento : 22 $ <br> <br> <br>
+                Pannier <br> <br>
+                <div id="vosChoix2"></div>
+                
                 <div class="total-btn">
                     <div class="total1">Total =</div>
-                    <div class="total2">30$</div>
+                    <div class="total2" id="totalDesk" >0</div>
                 </div>
             </div>
         </div>
-        <div class="repas" id="repas">
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
-            <div class="repas-plat" id="repas-plat">
-                <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
-                Plat 1 <br>
-                ingredient 1, ingredient 2 ,ingredient 3 <br>
-                <span class="price-plat" >25£</span> <br>
-                <span id="ajouter"><a href="">Ajouter</a></span>
-            </div>
+        <!-- FIN PANIER -->
+        <!-- MENU -->
+        
             
+        
+        <div class="repas" id="repas">
+             <div id="Plat">
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat1.gif" class="img-repat-plat" alt=""> <br>
+                    Okonomiyaki <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >15$</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Okonomiyaki',15)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat2.jpg" class="img-repat-plat" alt=""> <br>
+                    Miso Soup <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >25£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Miso Soup',25)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat3.jpg" class="img-repat-plat" alt=""> <br>
+                    Yakitori <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >21£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Yakitori',21)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat4.jpeg" class="img-repat-plat" alt=""> <br>
+                    Udon <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >45£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Udon',45)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat5.webp" class="img-repat-plat" alt=""> <br>
+                    Takoyaki <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >5£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Takoyaki',5)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat6.webp" class="img-repat-plat" alt=""> <br>
+                    Soba <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >13£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Soba',13)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat7.jpg" class="img-repat-plat" alt=""> <br>
+                    Sukiyaki <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >7£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Sukiyaki',7)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/plat/plat8.jpg" class="img-repat-plat" alt=""> <br>
+                    Sashimi <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >6£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Sashimi',6)">Ajouter</a></span>
+                </div>
+            </div>
+            <div id="Obento">
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento1.webp" class="img-repat-plat" alt=""> <br>
+                    Unagi <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >35£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Unagi',35)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento2.jpg" class="img-repat-plat" alt=""> <br>
+                    Tofu <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >12£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Tofu',12)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento3.jpg" class="img-repat-plat" alt=""> <br>
+                    Onigiri <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >33£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Onigiri',33)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento4.jfif" class="img-repat-plat" alt=""> <br>
+                    Wagashi <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >29£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Wagashi',29)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento5.jpg" class="img-repat-plat" alt=""> <br>
+                    Natto <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >12£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Natto',12)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento6.jpg" class="img-repat-plat" alt=""> <br>
+                    Oden <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >34£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Oden',34)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento7.jpg" class="img-repat-plat" alt=""> <br>
+                    Shabu Shabu <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >9£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Shabu Shabu',9)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/Obento/obento8.jpg" class="img-repat-plat" alt=""> <br>
+                    Tempura <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >16£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Tempura',16)">Ajouter</a></span>
+                </div>
+            </div>
+            <div id="lesSalades">
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade1.jpeg" class="img-repat-plat" alt=""> <br>
+                    Ramen <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >8£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Ramen',8)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade2.jpg" class="img-repat-plat" alt=""> <br>
+                    Tonkatsu <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >15£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Tonkatsu',15)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade3.jpg" class="img-repat-plat" alt=""> <br>
+                    Kaiseki <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >24£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Kaiseki',24)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade4.jpg" class="img-repat-plat" alt=""> <br>
+                    Kappo Ryori  <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >13£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Kappo Ryori',13)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade5.jpg" class="img-repat-plat" alt=""> <br>
+                    Shojin Ryori <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >19£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Shojin Ryori',19)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade6.jpg" class="img-repat-plat" alt=""> <br>
+                    Osechi Ryori  <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >12£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Osechi Ryori',12)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade6.jpg" class="img-repat-plat" alt=""> <br>
+                    Wagyu <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >27£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Wagyu',27)">Ajouter</a></span>
+                </div>
+                <div class="repas-plat" id="repas-plat">
+                    <img src="img/salade/salade9.webp" class="img-repat-plat" alt=""> <br>
+                    Bento <br>
+                    ingredient 1, ingredient 2 ,ingredient 3 <br>
+                    <span class="price-plat" >8£</span> <br>
+                    <span id="ajouter"><a href="#" onclick="ajouter('Bento',8)">Ajouter</a></span>
+                </div>
+            </div> 
         </div>
+        <!-- FIN MENU -->
         <!-- FOOTER -->
         <div class="index footer">
             <a href="">Privacy Policy</a>
@@ -181,22 +286,41 @@
         <!-- FIN FOOTER -->
     </div>
     <script>
+       function ajouter(name,prix){
+        //console.log("Testtt ");
+        //alert("jjjjjj");totalDesk  
+        //  document.getElementsByClassName('total2').innerText = "Hello World!";
+        //  document.getElementsByClassName('totalDesk').innerText = "Hello World!";
+        // alert(text);
+
+
+        var x = parseFloat( document.getElementById("total2").innerHTML )
+         x=x+prix;
+         document.getElementById("total2").innerHTML=x;
+         document.getElementById("totalDesk").innerHTML=x;
+         document.getElementById("vosChoix").innerHTML+=name+" :"+prix+"  <br> <br> ";
+         document.getElementById("vosChoix2").innerHTML+=name+" :"+prix+"  <br> <br> ";
+    }  
+
+
+
+
     function PlatSelectioner() {
     var picture_type = document.getElementById('categorie').value;
     if (picture_type == 1) {
-        document.getElementById('Plat').style.visibility = "none";
-        document.getElementById('Obento').style.visibility = "none";
-        document.getElementById('lesSalades').style.visibility = "visible";
+        document.getElementById('Plat').style.display = "none";
+        document.getElementById('Obento').style.display = "none";
+        document.getElementById('lesSalades').style.display = "flex";
     }  
     if (picture_type == 2) {
-        document.getElementById('Plat').style.visibility = "none";
-        document.getElementById('lesSalades').style.visibility = "none";
-        document.getElementById('Obento').style.visibility = "visible";
+        document.getElementById('Plat').style.display = "none";
+        document.getElementById('lesSalades').style.display = "none";
+        document.getElementById('Obento').style.display = "flex";
     } 
     if (picture_type == 3) {
-        document.getElementById('lesSalades').style.visibility = "none";
-        document.getElementById('Obento').style.visibility = "none";
-        document.getElementById('Plat').style.visibility = "visible";
+        document.getElementById('lesSalades').style.display = "none";
+        document.getElementById('Obento').style.display = "none";
+        document.getElementById('Plat').style.display = "flex";
     }
 }
 
@@ -221,15 +345,15 @@
 </body>
 </html>
 <script>
-    const selects = document.querySelectorAll('.categorie');
-    selects.forEach((elem) => {
-    elem.addEventListener('change', (event) => {
-    document.getElementById("categorie-choisi").innerHTML="Les "+elem.value+"s ";
-   // alert(elem.value);  //to display the selected value
-    });
-    });
-    if(elem.value!="Salade")
-        {
-            alert("ggggg");
-        }
+//     const selects = document.querySelectorAll('.categorie');
+//     selects.forEach((elem) => {
+//     elem.addEventListener('change', (event) => {
+//     document.getElementById("categorie-choisi").innerHTML="Les "+elem.value+"s ";
+//    // alert(elem.value);  //to display the selected value
+//     });
+//     });
+//     if(elem.value!="Salade")
+//         {
+//             alert("ggggg");
+//         }
 </script>
