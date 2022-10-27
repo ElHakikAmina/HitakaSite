@@ -1,8 +1,14 @@
 .head { grid-area: head;}
 .selecteur { grid-area: selecteur; }
 .pannier { grid-area: pannier; padding-right: 20px;}
-.repas{grid-area: repas;  display: flex; flex-wrap: wrap; justify-content: space-around; }
+.repas{grid-area: repas;  
+    /* display: flex; flex-wrap: wrap;justify-content: space-around; */
+ }
 .footer{grid-area: footer; }
+#Plat, #Obento, #lesSalades{
+    display: flex; flex-wrap: wrap;justify-content: space-around;
+}
+
 .container{
     display: grid;
     grid-template-areas:
@@ -37,7 +43,7 @@
 }
 .price-plat{color:rgb(25, 215, 25);}
 #ajouter a{color: rgb(84, 84, 84); text-decoration: none;
-} 
+}
 .pannier2{
     background-color: ;
     width: 200px;
