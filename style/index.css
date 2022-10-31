@@ -98,19 +98,6 @@
     color: #585858;
     text-decoration: none;
 }
-.footer{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    background-color: #C32630;
-}
-.footer a
-{
-    text-decoration: none;
-    color:#F3E9E9 ;
-    font-family: 'Allan', cursive;
-}
 .Maki-sushi{
     display: none;
 }
