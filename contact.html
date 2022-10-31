@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="style/pannierMobile.css">
     <link rel="stylesheet" href="style/pannier2.css">
 </head>
-<body>
+<body onload='document.form1.text1.focus()'>
     <div class="pannierMobile" id="pannierMobile" style="display: none;">
         <div class="pannier2">
             <br> Pannier <br> <br> <br> <br>
@@ -42,19 +43,34 @@
                 <div class="lien-head "><a href="index.html" class="">Acceuil</a></div>
                 <div class="lien-head "><a href="apropos.html" class=""> A propos</a></div>
                 <div class="lien-head "><a href="carte.html" class="">Carte</a></div>
-                <div class="lien-head active"><a href="contact.html" class="">Contact</a></div>  
+                <div class="lien-head active"><a href="contact.html"  class="">Contact</a></div>  
             </div>
         </div>
         <!--END HEAD-->
         <div class="contact">
+          <form name="form1" action="#">
             <br> <span class="contact-text1">CONTACTER-NOUS</span> <br> <br>
             <span class="contact-text2">VOUS AVEZ UNE QUESTION ? Pour toute question, merci de nous faire part à l'aide de ce formulaire</span> <br> <br>
-            <input type="text" class="contact-input" placeholder="Nom Complet ..."> <br><br>
-            <input type="text" class="contact-input" placeholder="Email ..."> <br><br>
-            <input type="text" class="contact-input" placeholder="Numéro de téléphone ..."> <br><br>
-            <textarea placeholder="Message ..." name="" id="" cols="30" rows="10" class="contact-textarea"></textarea> <br><br>
-            <input type="submit" value="Envoyer" class="contact-btn-envoyer">
+            <input type="text" class="contact-input" name="nom" id="nom" placeholder="Nom Complet ..."> <br><br>
+            <input type="email" class="contact-input" name="email" placeholder="Email ..."> 
+            <!-- <div id="email-erreor"></div> -->
+            <br><br>
+            <input type="text" class="contact-input" id="tel" placeholder="Numéro de téléphone ..."> <br><br>
+            <textarea placeholder="Message ..." name="" id="message" cols="30" rows="10" class="contact-textarea"></textarea> <br><br>
+            <input type="submit" value="Envoyer" name="submit" onclick="ValidateEmail(document.form1.email)" class="contact-btn-envoyer">
+          </form>
         </div>
+        <script>
+          function ValidateEmail(inputText)
+      {
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(!inputText.value.match(mailformat))
+      {
+        alert("You have entered an invalid email address!");
+      }
+      }
+      
+      </script>
         <!-- FOOTER -->
         <div class="index footer">
             <a href="">Privacy Policy</a>
