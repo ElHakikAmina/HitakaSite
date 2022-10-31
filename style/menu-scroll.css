@@ -19,7 +19,7 @@
         {
             font-size: 16px;
         }
-         .lien-head a {
+         .lien-head2 a {
             color: #585858;
             font-size: 15px;
             text-decoration: none;
@@ -27,7 +27,7 @@
           }
           .active a{
             color: #ED1B24;
-            font-size: 15px;
+            /* font-size: 15px; */
           } 
     
   
