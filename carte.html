@@ -309,23 +309,45 @@
            // element.parentNode.removeChild();
         }
 
+function minus(id,prix,name)
+{
+    lesIds[id]--;
+    
+    if(lesIds[id]!=0)
+    {
+       
+        var x=parseFloat(document.getElementById("total2").innerHTML)
+    x=x-prix;
+    document.getElementById("total2").innerHTML=x;
+         document.getElementById("totalDesk").innerHTML=x;
+         document.getElementById("id"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> ";
+          document.getElementById("id2"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> ";      
 
+    }else if (lesIds[id]==0){
+        var x=parseFloat(document.getElementById("total2").innerHTML)
+    x=x-prix;
+    document.getElementById("total2").innerHTML=x;
+         document.getElementById("totalDesk").innerHTML=x;
+
+        var elem = document.getElementById("id"+id);
+  elem.parentNode.removeChild(elem);
+  var elem2 = document.getElementById("id2"+id);
+  elem2.parentNode.removeChild(elem2);
+    }
+   
+}
        function ajouter(name,prix,id){
-        //console.log("Testtt ");
-        //alert("jjjjjj");totalDesk  
-        //  document.getElementsByClassName('total2').innerText = "Hello World!";
-        //  document.getElementsByClassName('totalDesk').innerText = "Hello World!";
-        // alert(text);
+        
+       
 if (lesIds[id]==0) {
-    //document.getElementById("id"+id).style.display="block";
+    
     x = parseFloat( document.getElementById("total2").innerHTML )
          x=x+prix;
          document.getElementById("total2").innerHTML=x;
          document.getElementById("totalDesk").innerHTML=x;
-         //document.getElementById("vosChoix").innerHTML+=name+" :"+prix+"  <br> <br> ";
-         document.getElementById("vosChoix").innerHTML+=" <div id='id"+id+"'>"+name+" :"+prix+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <br> <br> "+"</div> ";
-         document.getElementById("vosChoix2").innerHTML+=" <div id='id2"+id+"'>"+name+" :"+prix+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <br> <br> "+"</div> ";
-         //document.getElementById("vosChoix2").innerHTML+=" <div>"+name+" :"+prix+"  <br> <br> "+"</div> ";
+         
+         document.getElementById("vosChoix").innerHTML+=" <div id='id"+id+"'>"+name+" :"+prix+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> "+"</div> ";
+         document.getElementById("vosChoix2").innerHTML+=" <div id='id2"+id+"'>"+name+" :"+prix+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> "+"</div> ";
          lesIds[id]++;
 }else{
      lesIds[id]++;
@@ -333,16 +355,10 @@ if (lesIds[id]==0) {
          x=x+prix;
          document.getElementById("total2").innerHTML=x;
           document.getElementById("totalDesk").innerHTML=x;
-          document.getElementById("id"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <br> <br> ";
-          document.getElementById("id2"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <br> <br> ";
-    //      document.getElementById("vosChoix2").innerHTML+=name+" :"+prix+"  <br> <br> ";
-         
-} 
-    
+          document.getElementById("id"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> ";
+          document.getElementById("id2"+id).innerHTML=name+"(x"+lesIds[id]+") :"+prix*lesIds[id]+" <img src='img/icons/supprimer.png' onclick='supprimer("+id+","+prix+")' width=20px height=20px > <img src='img/icons/minus.png' onclick='minus("+id+","+prix+",\""+name+"\")' width=20px height=20px/> <br> <br> ";      
+}    
     }  
-
-   
-
 
     function PlatSelectioner() {
     var picture_type = document.getElementById('categorie').value;
