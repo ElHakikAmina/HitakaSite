@@ -19,23 +19,22 @@
         {
             font-size: 16px;
         }
-        /* .lien-head2 a {
+         .lien-head a {
             color: #585858;
-            font-size: 12px;
+            font-size: 15px;
             text-decoration: none;
             font-family: 'Allan', sans-serif;
           }
-          .active2 a{
+          .active a{
             color: #ED1B24;
-            font-size: 22px;
-          } */
+            font-size: 15px;
+          } 
     
   
     /* @media screen and (min-width: 600px){
         .menu-scroll{
             display: none;
         }
-        /* .menu-scroll a{
+         .menu-scroll a{
             visibility: hidden;
         } */
-    }  */
