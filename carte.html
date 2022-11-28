@@ -19,7 +19,6 @@
 </head>
 <body>
     <script>
-       
     </script>
     <div class="menu-scroll" id="menu-scroll" style="display: none;">
         <div class="lien-head2 "><a href="index.html" class="">Acceuil</a></div> <br>
@@ -27,40 +26,26 @@
         <div class="lien-head2 active"><a href="carte.html" class="">Carte</a></div> <br>
         <div class="lien-head2"><a href="contact.html" class="">Contact</a></div>  
     </div>
+    <script>
+        function confirm()
+        {
+            
 
-
-
-
-
-
-
-
+            alert("Votre commande a bien été envoyer");
+            location.reload();
+        }
+    </script>
     <div class="pannierMobile" id="pannierMobile" style="display: none;">
         <div class="pannier2" id="pannier2">
             Panier <br>
             <div id="vosChoix"></div>
-            <!-- <br> Pannier <br> <br> <br> <br>
-            Salade : 15$ <br> <br> <br>
-            Plat : 30$ <br> <br> <br>
-            Obento : 22 $ <br> <br> <br> -->
             <div class="total-btn">
-                <div class="total1">Total =</div>
-                <div class="total2 " id="total2">0</div>
+                <div class="total1"  >Total =</div>
+                <div class="total2 "  id="total2">0</div>
             </div>
+            <div id="btn_Confirm"><input type="submit" onclick="confirm()" value="Confirmer " style="background-color: rgb(30, 214, 30); padding: 5px 10px; color:white; font-size: 18px; font-family: Allan; border:1px solid rgb(21, 196, 21); margin-bottom: 10px;"></div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="container">
         <!--START HEAD-->
         <div class="index indexMobile head">
@@ -91,9 +76,10 @@
                 <div id="vosChoix2"></div>
                 
                 <div class="total-btn">
-                    <div class="total1">Total =</div>
+                    <div class="total1" >Total =</div>
                     <div class="total2" id="totalDesk" >0</div>
                 </div>
+                <div><input type="submit" onclick="confirm()" value="Confirmer " style="background-color: rgb(30, 214, 30); padding: 5px 10px; color:white; font-size: 18px; font-family: Allan; border:1px solid rgb(21, 196, 21); margin-bottom: 10px;"></div>
             </div>
         </div>
         <!-- FIN PANIER -->
@@ -404,16 +390,3 @@ if (lesIds[id]==0) {
         </script>
 </body>
 </html>
-<script>
-//     const selects = document.querySelectorAll('.categorie');
-//     selects.forEach((elem) => {
-//     elem.addEventListener('change', (event) => {
-//     document.getElementById("categorie-choisi").innerHTML="Les "+elem.value+"s ";
-//    // alert(elem.value);  //to display the selected value
-//     });
-//     });
-//     if(elem.value!="Salade")
-//         {
-//             alert("ggggg");
-//         }
-</script>

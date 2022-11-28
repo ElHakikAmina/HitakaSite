@@ -1,5 +1,5 @@
 .head { grid-area: head;}
-.selecteur { grid-area: selecteur; }
+.selecteur { grid-area: selecteur; margin:auto; }
 .pannier { grid-area: pannier; padding-right: 20px;}
 .repas{grid-area: repas;  
     /* display: flex; flex-wrap: wrap;justify-content: space-around; */
